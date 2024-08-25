@@ -12,6 +12,7 @@ public class JdbcOrderRepository implements OrderRepository {
 
     public JdbcOrderRepository(DataSource dataSource) {
         this.jdbcClient = JdbcClient.create(dataSource);
+        //
     }
 
     @PostConstruct
